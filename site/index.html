@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <!-- =========================================================
+      DOKUMENT: Gentle Pets – Landingpage (Katzenfutter)
+      ZIEL: Klare Struktur, semantische Elemente, Navigation, A11y-Basics
+      HINWEIS: CSS/JS bleiben extern (styles.css, main.js)
+    ========================================================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Gentle Pets – Katzenfutter | Premium & Transparent</title>
+
+    <!-- SEO (optional, aber sinnvoll) -->
+    <meta
+      name="description"
+      content="Sanftes Katzenfutter für empfindliche Mägen: transparent, hochwertig, ohne unnötige Füllstoffe. Probierpaket 30 Tage risikofrei testen."
+    />
+
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Skip-Link für Tastatur-Navigation -->
+    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+    <div class="page-wrapper">
+      <!-- =========================================================
+        HEADER + NAV
+        - Brand/Logo
+        - Primäre Navigation (Sprungmarken)
+        - Primäre CTA im Header (optional)
+      ========================================================== -->
+      <header class="site-header" role="banner">
+        <div class="container header-inner">
+          <a class="brand" href="#" aria-label="Gentle Pets Startseite">
+            <span class="brand-mark" aria-hidden="true">🐾</span>
+            <span class="brand-name">Gentle Pets</span>
+          </a>
+
+          <nav class="site-nav" aria-label="Hauptnavigation">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="#vorteile">Vorteile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#transparenz">Transparenz</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#stimmen">Kundenstimmen</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#beratung">Beratung & Newsletter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#probierpaket">Probierpaket</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header-cta">
+            <a
+              class="btn btn-primary"
+              href="#probierpaket"
+              aria-label="Zum Probierpaket Formular"
+            >
+              Probierpaket sichern
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- =========================================================
+        MAIN (Inhaltsbereich)
+      ========================================================== -->
+      <main id="main" class="site-main" role="main">
+        <!-- =======================================================
+          HERO
+          - Primäre Botschaft + CTA
+          - Bild/Visual als figure
+        ======================================================== -->
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="container">
+            <div class="hero-grid">
+              <div class="hero-content">
+                <h1 id="hero-title" class="hero-headline">
+                  Sanftes Katzenfutter, das einfach gut ankommt.
+                </h1>
+
+                <p class="hero-subline">
+                  Hochwertige Rezepturen, transparente Zutaten – und ein
+                  Probierpaket für deinen Stubentiger.
+                </p>
+
+                <ul class="hero-trust-list" aria-label="Vertrauensmerkmale">
+                  <li class="hero-trust-item">30 Tage risikofrei testen</li>
+                  <li class="hero-trust-item">Transparente Zutatenliste</li>
+                  <li class="hero-trust-item">Für sensible Verdauung geeignet</li>
+                </ul>
+
+                <div class="cta-group" role="group" aria-label="Hauptaktionen">
+                  <button
+                    class="btn btn-primary"
+                    id="cta-hero"
+                    type="button"
+                    aria-label="Probierpaket sichern"
+                  >
+                    Probierpaket sichern
+                  </button>
+
+                  <a
+                    class="btn btn-secondary"
+                    id="cta-secondary"
+                    href="#transparenz"
+                    aria-label="Zutaten und Vorteile ansehen"
+                  >
+                    Zutaten &amp; Vorteile ansehen
+                  </a>
+                </div>
+              </div>
+
+              <div class="hero-image">
+                <figure class="hero-figure">
+                  <div
+                    class="image-placeholder"
+                    role="img"
+                    aria-label="Produktbild Katzenfutter (Platzhalter)"
+                  >
+                    🐱 Katzenfutter Produktbild
+                  </div>
+                  <figcaption class="sr-only">
+                    Gentle Pets Premium-Katzenfutter – Produktansicht.
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+       
+
+        <!-- =======================================================
+          VORTEILE / USPs
+          - Section-ID für Nav
+          - Liste von Cards (article)
+        ======================================================== -->
+        <section id="vorteile" class="usps" aria-labelledby="usps-title">
+          <div class="container">
+            <h2 id="usps-title" class="section-title">Warum Gentle Pets?</h2>
+
+            <div id="usps-grid" class="usps-grid" role="list">
+              <article class="usp-card" role="listitem">
+                <div class="usp-icon" aria-hidden="true">✓</div>
+                <h3 class="usp-title">Ausgewogene Rezeptur</h3>
+                <p class="usp-description">
+                  Entwickelt für empfindliche Verdauung mit hochwertigen
+                  Proteinen und ohne unnötige Füllstoffe.
+                </p>
+              </article>
+
+              <article class="usp-card" role="listitem">
+                <div class="usp-icon" aria-hidden="true">🍃</div>
+                <h3 class="usp-title">Natürliche Zutaten</h3>
+                <p class="usp-description">
+                  Nur das Beste aus der Natur. Keine künstlichen Farb- oder
+                  Konservierungsstoffe.
+                </p>
+              </article>
+
+              <article class="usp-card" role="listitem">
+                <div class="usp-icon" aria-hidden="true">🔬</div>
+                <h3 class="usp-title">Transparente Inhaltsliste</h3>
+                <p class="usp-description">
+                  Jede Zutat ist benannt und verständlich. Keine versteckten
+                  Inhaltsstoffe.
+                </p>
+              </article>
+
+              <article class="usp-card" role="listitem">
+                <div class="usp-icon" aria-hidden="true">💚</div>
+                <h3 class="usp-title">Beliebt bei Katzen</h3>
+                <p class="usp-description">
+                  Leckermaul-getestet. 89% der Katzen mögen es vom ersten Bissen
+                  an.
+                </p>
+              </article>
+
+              <article class="usp-card" role="listitem">
+                <div class="usp-icon" aria-hidden="true">🏆</div>
+                <h3 class="usp-title">Zukunftsorientiert</h3>
+                <p class="usp-description">
+                  Nachhaltige Verpackung und ethische Beschaffung – für eine
+                  bessere Zukunft.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- =======================================================
+          TRANSPARENZ / ZUTATEN
+          - Bereits vorhandene ID behalten
+          - Inhalte als Cards (article) + semantische Listen
+        ======================================================== -->
+        <section
+          class="transparenz"
+          id="transparenz"
+          aria-labelledby="transparenz-title"
+        >
+          <div class="container">
+            <h2 id="transparenz-title" class="section-title">
+              Vollständige Transparenz
+            </h2>
+            <p class="section-subtitle">
+              Das ist uns wichtig: Du siehst genau, was in Leo's Napf kommt.
+            </p>
+
+            <div class="transparenz-grid">
+              <article
+                class="info-card info-card-teal"
+                aria-labelledby="zutaten-title"
+              >
+                <h3 id="zutaten-title" class="info-card-title">
+                  Hauptzutaten (Trocken)
+                </h3>
+                <ul class="ingredients-list">
+                  <li>Hähnchen (45%)</li>
+                  <li>Kartoffel (20%)</li>
+                  <li>Möhre (10%)</li>
+                  <li>Lachsöl (8%)</li>
+                  <li>Brennnessel (5%)</li>
+                </ul>
+              </article>
+
+              <article
+                class="info-card info-card-teal"
+                aria-labelledby="zert-title"
+              >
+                <h3 id="zert-title" class="info-card-title">
+                  Zertifizierungen
+                </h3>
+                <ul class="certifications-list">
+                  <li class="certification-item">
+                    <span class="certification-check" aria-hidden="true"
+                      >✓</span
+                    >
+                    Europäische Herstellung
+                  </li>
+                  <li class="certification-item">
+                    <span class="certification-check" aria-hidden="true"
+                      >✓</span
+                    >
+                    Keine Tierversuche
+                  </li>
+                  <li class="certification-item">
+                    <span class="certification-check" aria-hidden="true"
+                      >✓</span
+                    >
+                    Nachhaltige Verpackung
+                  </li>
+                  <li class="certification-item">
+                    <span class="certification-check" aria-hidden="true"
+                      >✓</span
+                    >
+                    Veterinär-geprüft
+                  </li>
+                </ul>
+              </article>
+
+              <article
+                class="info-card info-card-teal"
+                aria-labelledby="naehr-title"
+              >
+                <h3 id="naehr-title" class="info-card-title">
+                  Nährstoff-Garantie
+                </h3>
+                <p class="nutrient-info">
+                  Rohprotein: 32% | Rohfett: 12% | Rohasche: 8% | Rohfaser: 3%
+                </p>
+                <p class="nutrient-info">
+                  <strong>Perfekt für:</strong> Erwachsene Katzen &amp; sensible
+                  Verdauung
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- =======================================================
+          KUNDENSTIMMEN
+          - ID für Nav
+          - Testimonials als figure/blockquote
+        ======================================================== -->
+        <section
+          id="stimmen"
+          class="testimonials"
+          aria-labelledby="testimonials-title"
+        >
+          <div class="container">
+            <h2 id="testimonials-title" class="section-title">
+              Das sagen Katzeneltern
+            </h2>
+
+            <div id="testimonials-grid" class="testimonials-grid">
+              <figure class="testimonial-card">
+                <blockquote class="testimonial-text">
+                  „Endlich ein Futter, bei dem ich nicht rätseln muss, was drin
+                  ist. Leo's Verdauung ist seitdem perfekt!“
+                </blockquote>
+                <figcaption class="testimonial-author">
+                  <span class="testimonial-name">Sarah M.</span>
+                  <span class="testimonial-cat">Leo, 5 Jahre</span>
+                </figcaption>
+              </figure>
+
+              <figure class="testimonial-card">
+                <blockquote class="testimonial-text">
+                  „Meine Luna war immer sehr wählerisch. Mit Gentle Pets frisst
+                  sie begeistert – und der Preis ist es wert.“
+                </blockquote>
+                <figcaption class="testimonial-author">
+                  <span class="testimonial-name">Marc K.</span>
+                  <span class="testimonial-cat">Luna, 3 Jahre</span>
+                </figcaption>
+              </figure>
+
+              <figure class="testimonial-card">
+                <blockquote class="testimonial-text">
+                  „Transparenz war mir wichtig. Hier sehe ich genau, was meine
+                  Katze frisst. Sehr zu empfehlen!“
+                </blockquote>
+                <figcaption class="testimonial-author">
+                  <span class="testimonial-name">Anna H.</span>
+                  <span class="testimonial-cat">Mittens, 7 Jahre</span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="beratung"
+          class="beratung"
+          aria-labelledby="beratung-title"
+        >
+          <div class="container">
+            <h2 id="beratung-title" class="section-title">
+              Beratung & Newsletter
+            </h2>
+            <p class="section-subtitle">
+              Wenig Zeit? Hol dir Sorten-Empfehlungen für sensible Katzen – und
+              Tipps zu Zutaten, Fütterung und Umstellung. Kostenlos per E-Mail.
+            </p>
+
+            <div class="beratung-grid">
+              <article
+                class="beratung-card"
+                aria-labelledby="beratung-card-title"
+              >
+                <h3 id="beratung-card-title" class="beratung-title">
+                  Futterberatung anfragen
+                </h3>
+                <p class="beratung-text">
+                  Sag uns kurz, wie deine Katze frisst (wählerisch, sensibel,
+                  aktiv) – wir melden uns mit einer Empfehlung.
+                </p>
+                <a class="btn btn-secondary" href="#probierpaket"
+                  >Zur Probierpaket-Anfrage</a
+                >
+              </article>
+
+              <article class="beratung-card" aria-labelledby="newsletter-title">
+                <h3 id="newsletter-title" class="beratung-title">
+                  Newsletter: sanfte Tipps
+                </h3>
+                <form id="newsletter-form" class="newsletter-form" novalidate>
+                  <label class="form-label" for="newsletter-email">
+                    E-Mail-Adresse <span class="required">*</span>
+                  </label>
+                  <input
+                    id="newsletter-email"
+                    name="newsletter-email"
+                    type="email"
+                    class="form-input"
+                    inputmode="email"
+                    autocomplete="email"
+                    required
+                    aria-invalid="false"
+                    aria-describedby="newsletter-email-error"
+                  />
+                  <div
+                    id="newsletter-email-error"
+                    class="error-message"
+                    role="alert"
+                    aria-live="polite"
+                  ></div>
+
+                  <label class="checkbox">
+                    <input id="newsletter-consent" type="checkbox" required />
+                    <span
+                      >Ich akzeptiere die
+                      <a href="#">Datenschutz</a>-Hinweise.</span
+                    >
+                  </label>
+
+                  <button type="submit" class="btn btn-primary">
+                    Newsletter abonnieren
+                  </button>
+                  <p
+                    id="newsletter-success"
+                    class="newsletter-success hidden"
+                    aria-live="polite"
+                  ></p>
+                </form>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- =======================================================
+          FORMULAR / PROBIERPAKET
+          - ID für Nav
+          - A11y: autocomplete, required, aria-describedby bleibt
+        ======================================================== -->
+        <section
+          id="probierpaket"
+          class="form-section"
+          aria-labelledby="form-title"
+        >
+          <div class="container form-container">
+            <div id="form-wrapper" class="form-wrapper">
+              <h2 id="form-title" class="section-title">
+                Hol dir das Probierpaket
+              </h2>
+              <p class="form-subtitle">
+                Teste Gentle Pets jetzt 30 Tage risikofrei. Deine Katze wird es
+                lieben – oder Geld zurück!
+              </p>
+
+              <form id="probierpaket-form" class="form" novalidate>
+                <div class="form-group">
+                  <label for="name" class="form-label">
+                    Dein Name <span class="required">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-input"
+                    required
+                    autocomplete="name"
+                    aria-invalid="false"
+                    aria-describedby="name-error"
+                  />
+                  <div
+                    id="name-error"
+                    class="error-message"
+                    role="alert"
+                    aria-live="polite"
+                  ></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="form-label">
+                    E-Mail-Adresse <span class="required">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-input"
+                    required
+                    autocomplete="email"
+                    inputmode="email"
+                    aria-invalid="false"
+                    aria-describedby="email-error"
+                  />
+                  <div
+                    id="email-error"
+                    class="error-message"
+                    role="alert"
+                    aria-live="polite"
+                  ></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="futterwahl" class="form-label">
+                    Futterart für dein Probierpaket
+                    <span class="required">*</span>
+                  </label>
+                  <select
+                    id="futterwahl"
+                    name="futterwahl"
+                    class="form-input"
+                    required
+                    aria-invalid="false"
+                    aria-describedby="futterwahl-error"
+                  >
+                    <option value="" selected>
+                      Bitte Futterart auswählen
+                    </option>
+                    <option value="trocken">Trockenfutter (500g)</option>
+                    <option value="nass">Nassfutter Variety (6x 100g)</option>
+                    <option value="mix">
+                      Mix-Paket (250g Trocken + 3x 100g Nass)
+                    </option>
+                  </select>
+                  <div
+                    id="futterwahl-error"
+                    class="error-message"
+                    role="alert"
+                    aria-live="polite"
+                  ></div>
+                </div>
+
+                <div class="form-group">
+                  <label class="checkbox" for="abo">
+                    <input type="checkbox" id="abo" name="abo" />
+                    <span
+                      >Optional: im Abo liefern (monatlich) – jederzeit
+                      pausieren.</span
+                    >
+                  </label>
+                </div>
+
+                <p class="form-disclaimer">
+                  Mit dem Absenden akzeptierst du unsere
+                  <a href="#">Datenschutz</a> und
+                  <a href="#">Nutzungsbedingungen</a>.
+                </p>
+
+                <button type="submit" class="btn btn-primary btn-submit">
+                  Probierpaket anfordern
+                </button>
+              </form>
+            </div>
+
+            <div
+              id="success-message"
+              class="success-message hidden"
+              aria-live="polite"
+            >
+              <div class="success-icon" aria-hidden="true">✓</div>
+              <h3 class="success-title">Juhu! 🎉</h3>
+              <p class="success-text">
+                Danke, <span id="success-name"></span>! Wir haben deine Anfrage
+                erhalten und senden dir unter
+                <span id="success-email"></span> in Kürze alle Details und eine
+                Versandbestätigung.
+              </p>
+              <p class="success-text success-text-secondary">
+                Dein <span id="success-product"></span> kommt in 2–3 Werktagen
+                an. Viel Spaß beim Ausprobieren! 😺
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="testing" aria-labelledby="testing-title">
+          <div class="container">
+            <h2 id="testing-title" class="section-title">
+              Testing & Optimierung
+            </h2>
+            <details class="testing-details">
+              <summary>Was wurde getestet?</summary>
+              <ul class="testing-list">
+                <li>
+                  <strong>Methode:</strong> Keyboard- und Screenreader-Check
+                  (Fokusführung, Alerts, Labels) + Mobile-Viewport-Test.
+                </li>
+                <li>
+                  <strong>Ergebnis:</strong> Navigation ist per Tastatur
+                  vollständig bedienbar; Skip-Link sichtbar bei Fokus.
+                </li>
+                <li>
+                  <strong>Verbesserung:</strong> Formular-Fehler werden zentral
+                  (Alert) und feldbezogen angezeigt; Reduced Motion wird
+                  respektiert.
+                </li>
+              </ul>
+            </details>
+          </div>
+        </section>
+      </main>
+
+      <!-- =========================================================
+        FOOTER
+        - Ergänzt: Footer-Navigation (optional)
+      ========================================================== -->
+      <footer class="footer" role="contentinfo">
+        <div class="container">
+          <div class="footer-grid">
+            <section class="footer-section" aria-labelledby="footer-brand">
+              <h4 id="footer-brand" class="footer-title">Gentle Pets</h4>
+              <p class="footer-text">
+                Premiumfutter für glückliche und gesunde Katzen. Transparent.
+                Hochwertig. Vertrauenswürdig.
+              </p>
+            </section>
+
+            <nav class="footer-section" aria-label="Service Links">
+              <h4 class="footer-title">Service</h4>
+              <ul class="footer-links">
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Versand &amp; Rückgabe</a></li>
+              </ul>
+            </nav>
+
+            <nav class="footer-section" aria-label="Rechtliches">
+              <h4 class="footer-title">Rechtliches</h4>
+              <ul class="footer-links">
+                <li><a href="#">Datenschutz</a></li>
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">AGB</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer-bottom">
+            <p class="footer-copyright">
+              © 2024 Gentle Pets. Alle Rechte vorbehalten. | Entwickelt mit ❤️
+              für glückliche Katzen.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+{
+  "hero": {
+    "headline": "Sanftes Katzenfutter, das einfach gut ankommt.",
+    "subline": "Probieren Sie jetzt unser Premium-Katzenfutter mit natürlichen Zutaten – speziell für sensible Samtpfoten entwickelt.",
+    "ctaPrimary": "Probierpaket sichern",
+    "ctaSecondary": "Zutaten & Vorteile ansehen"
+  },
+  "usps": [
+    {
+      "id": 1,
+      "icon": "🌿",
+      "title": "100% natürliche Zutaten",
+      "text": "Ohne künstliche Zusatzstoffe, Farbstoffe oder Konservierungsmittel"
+    },
+    {
+      "id": 2,
+      "icon": "🥩",
+      "title": "Hoher Fleischanteil",
+      "text": "Mindestens 70% frisches Fleisch aus artgerechter Haltung"
+    },
+    {
+      "id": 3,
+      "icon": "🔬",
+      "title": "Tierärztlich entwickelt",
+      "text": "Von Ernährungsexperten speziell für sensible Verdauung konzipiert"
+    },
+    {
+      "id": 4,
+      "icon": "✓",
+      "title": "Ausgewogene Rezeptur",
+      "text": "Alle wichtigen Nährstoffe, Vitamine und Mineralien in optimaler Balance"
+    },
+    {
+      "id": 5,
+      "icon": "🇩🇪",
+      "title": "Made in Germany",
+      "text": "Hergestellt in Deutschland mit strengsten Qualitätskontrollen"
+    }
+  ],
+  "transparency": {
+    "headline": "Volle Transparenz – für Ihre Sicherheit",
+    "intro": "Wir wissen, wie wichtig Ihnen die Gesundheit Ihrer Katze ist. Deshalb legen wir alle Karten auf den Tisch.",
+    "ingredients": [
+      {
+        "name": "Frisches Hühnerfleisch",
+        "percentage": "70%",
+        "origin": "Deutschland"
+      },
+      {
+        "name": "Süßkartoffeln",
+        "percentage": "15%",
+        "origin": "Regional"
+      },
+      {
+        "name": "Karotten & Erbsen",
+        "percentage": "10%",
+        "origin": "Bio-Qualität"
+      },
+      {
+        "name": "Vitamine & Mineralien",
+        "percentage": "5%",
+        "origin": "Natürlich"
+      }
+    ],
+    "certifications": [
+      "Bio-zertifiziert",
+      "Ohne Tierversuche",
+      "Nachhaltige Produktion"
+    ]
+  },
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Julia M.",
+      "location": "München",
+      "catName": "Mimi",
+      "rating": 5,
+      "text": "Endlich ein Futter, bei dem ich nicht rätseln muss, was drin ist. Mimi verträgt es super und frisst es mit Begeisterung!"
+    },
+    {
+      "id": 2,
+      "name": "Thomas K.",
+      "location": "Hamburg",
+      "catName": "Felix",
+      "rating": 5,
+      "text": "Seit wir auf Gentle Pets umgestiegen sind, hat Felix keine Verdauungsprobleme mehr. Absolute Empfehlung!"
+    },
+    {
+      "id": 3,
+      "name": "Sarah L.",
+      "location": "Berlin",
+      "catName": "Luna",
+      "rating": 5,
+      "text": "Die Transparenz bei den Inhaltsstoffen hat mich überzeugt. Luna liebt es und ich habe ein gutes Gefühl dabei."
+    }
+  ],
+  "formTeaser": {
+    "headline": "Hol dir das Probierpaket für deine Katze",
+    "subline": "Kostenlos testen – nur solange der Vorrat reicht!",
+    "cta": "Probierpaket anfordern"
+  },
+  "foodOptions": [
+    {
+      "id": "dry",
+      "label": "Trockenfutter",
+      "description": "Knusprige Kroketten für gesunde Zähne"
+    },
+    {
+      "id": "wet",
+      "label": "Nassfutter",
+      "description": "Saftige Häppchen in Gelee"
+    },
+    {
+      "id": "mix",
+      "label": "Mix-Paket",
+      "description": "Kombination aus Trocken- und Nassfutter"
+    }
+  ],
+  "footer": {
+    "companyName": "Gentle Pets GmbH",
+    "address": "Musterstraße 123, 10115 Berlin",
+    "email": "info@gentlepets.de",
+    "phone": "+49 30 12345678",
+    "links": [
+      {
+        "text": "Impressum",
+        "url": "#impressum"
+      },
+      {
+        "text": "Datenschutz",
+        "url": "#datenschutz"
+      },
+      {
+        "text": "AGB",
+        "url": "#agb"
+      },
+      {
+        "text": "Kontakt",
+        "url": "#kontakt"
+      }
+    ]
+  }
+}
